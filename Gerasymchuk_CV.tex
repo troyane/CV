@@ -1,29 +1,5 @@
-%---------------------------------------------------------------------------------------%%
-%	The MIT License (MIT)
-%
-%	Copyright (c) 2015 Jan Küster
-%
-%	Permission is hereby granted, free of charge, to any person obtaining a copy
-%	of this software and associated documentation files (the "Software"), to deal
-%	in the Software without restriction, including without limitation the rights
-%	to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-%	copies of the Software, and to permit persons to whom the Software is
-%	furnished to do so, subject to the following conditions:
-%	
-%	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-%	IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-%	FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-%	AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-%	LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-%	OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-%	THE SOFTWARE.
-%
-%---------------------------------------------------------------------------------------%
-
 %=======================================================================================%
-%
 %	DOCUMENT DEFINITION
-%
 %=======================================================================================%
 
 %we use article class because we want to fully customize the page and dont use a cv template
@@ -61,7 +37,7 @@
 
 
 % set font default
-\renewcommand*\familydefault{\sfdefault} 	
+\renewcommand*\familydefault{\sfdefault}
 \usepackage[T1]{fontenc}
 
 % more font size definitions
@@ -99,7 +75,7 @@
 
 %---------------------------------------------------------------------------------------%
 %	TABLE /ARRAY DEFINITIONS
-%---------------------------------------------------------------------------------------% 
+%---------------------------------------------------------------------------------------%
 
 %for layouting tables
 \usepackage{multicol}
@@ -114,7 +90,7 @@
 
 %---------------------------------------------------------------------------------------%
 %	GRAPHICS DEFINITIONS
-%---------------------------------------------------------------------------------------% 
+%---------------------------------------------------------------------------------------%
 
 %for header image
 \usepackage{graphicx}
@@ -173,11 +149,7 @@
 }
 
 %=======================================================================================%
-%
-%
 %	DEFINITIONS
-%
-%
 %=======================================================================================%
 
 % returns minipage width minus two times \fboxsep
@@ -214,7 +186,7 @@
 }
 
 %---------------------------------------------------------------------------------------%
-%	custom sections
+%	Custom sections
 %---------------------------------------------------------------------------------------%
 
 % create a coloured box with arrow and title as cv section headline
@@ -342,13 +314,7 @@
 
 
 %=======================================================================================%
-%
-%
-%
 %	DOCUMENT CONTENT
-%
-%
-%
 %=======================================================================================%
 \begin{document}
 \fcolorbox{white}{white}{\begin{minipage}[c][0.95\textheight][t]{0.69\linewidth}
@@ -402,9 +368,7 @@ the real-life task enters my way, and I can solve it by math and/or programming 
 \vspace{60pt}
 
 %=======================================================================================%
-%
 %	CV SECTIONS AND EVENTS (MAIN CONTENT)
-%
 %=======================================================================================%
 
 %---------------------------------------------------------------------------------------%
@@ -573,8 +537,6 @@ the real-life task enters my way, and I can solve it by math and/or programming 
 \hspace{-0.25\linewidth}\colorbox{bgcol}{\makebox[1.5\linewidth][c]{\mystrut \small \textcolor{white}{You can find this CV (code \& pdf) at \iconhref{Github}{12}{my repo.}{https://github.com/troyane/CV}{white} }}}
 
 %=======================================================================================%
-%
 %	DOCUMENT END
-%
 %=======================================================================================%
 \end{document}
