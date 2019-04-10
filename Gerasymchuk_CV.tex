@@ -5,7 +5,6 @@
 %we use article class because we want to fully customize the page and dont use a cv template
 \documentclass[10pt,A4]{article}
 
-
 %---------------------------------------------------------------------------------------%
 %	ENCODING
 %---------------------------------------------------------------------------------------%
@@ -35,14 +34,12 @@
 % \usepackage[light,math]{iwona}
 % \usepackage[thin]{roboto} 
 
-
 % set font default
 \renewcommand*\familydefault{\sfdefault}
 \usepackage[T1]{fontenc}
 
 % more font size definitions
 \usepackage{moresize}
-
 \usepackage{fontawesome}
 
 %---------------------------------------------------------------------------------------%
@@ -52,23 +49,18 @@
 %debug page outer frames
 %\usepackage{showframe}
 
-
 %define page styles using geometry
 \usepackage[a4paper]{geometry}
 
-% for example, change the margins to 2 inches all round
-\geometry{top=1cm, bottom=-.6cm, left=0.4cm, right=1cm} 
-
+\geometry{top=1cm, bottom=-.6cm, left=0.4cm, right=1cm}
 
 %less space between header and content
 \setlength{\headheight}{-5pt}
-
 
 %customize entries left, center and right
 %\lhead{}
 %\chead{ \small{Jan Küster  $\cdot$ Consultant and Software Engineer $\cdot$  Bremen, Germany  $\cdot$  \textcolor{sectcol}{\textbf{info@jankuester.com}}  $\cdot$ +49 176 313 *** **}}
 %\rhead{}
-
 
 %indentation is zero
 \setlength{\parindent}{0mm}
@@ -80,13 +72,11 @@
 %for layouting tables
 \usepackage{multicol}
 \usepackage{multirow}
-
 %extended aligning of tabular cells
 \usepackage{array}
 
 \newcolumntype{x}[1]{%
 >{\raggedleft\hspace{0pt}}p{#1}}%
-
 
 %---------------------------------------------------------------------------------------%
 %	GRAPHICS DEFINITIONS
@@ -114,16 +104,6 @@
 %accent color
 \definecolor{complcol}{RGB}{150,100,20}
 
-% dark background color
-% \definecolor{bgcol}{RGB}{110,110,110}
-% 
-% light background / accent color
-% \definecolor{softcol}{RGB}{225,225,225}
-% 
-% \definecolor{sectcol}{RGB}{0,120,150}
-
-%
-%accent color
 \definecolor{sectcol}{RGB}{255,150,10}
 
 %dark background color
@@ -131,19 +111,18 @@
 
 %light background / accent color
 \definecolor{softcol}{RGB}{225,225,225}
-%
 
 
 %Package for links, must be the last package used
 \usepackage[]{hyperref}
 
 \hypersetup{
-    pdftitle={Nazar Gerasymchuk CV},    % title
-    pdfauthor={Nazar Gerasymchuk},     % author
-    pdfsubject={CV},   % subject of the document
-    pdfcreator={Nazar Gerasymchuk},   % creator of the document
-    colorlinks=false,       % false: boxed links; true: colored 
-    urlbordercolor=orange,
+    pdftitle={Nazar Gerasymchuk CV}, % title
+    pdfauthor={Nazar Gerasymchuk},   % author
+    pdfsubject={CV},                 % subject of the document
+    pdfcreator={Nazar Gerasymchuk},  % creator of the document
+    colorlinks=false,                % false: boxed links; true: colored 
+    urlbordercolor=orange,           % use colored underline for links
     pdfborder={0 0 0},
     pdfborderstyle={/S/U/W 1}
 }
@@ -151,11 +130,10 @@
 %=======================================================================================%
 %	DEFINITIONS
 %=======================================================================================%
-
 % returns minipage width minus two times \fboxsep
 % to keep padding included in width calculations
 \newcommand{\mpwidth}{\linewidth-\fboxsep-\fboxsep}
-	
+
 
 %---------------------------------------------------------------------------------------%
 % 	ARROW GRAPHICS in Tikz
@@ -188,7 +166,6 @@
 %---------------------------------------------------------------------------------------%
 %	Custom sections
 %---------------------------------------------------------------------------------------%
-
 % create a coloured box with arrow and title as cv section headline
 % param 1: section title
 %
@@ -274,13 +251,6 @@
 %----------------------------------------- -----------------------------------------------
 \newcommand{\mystrut}{\rule[-.3\baselineskip]{0pt}{\baselineskip}}
 
-%---------------------------------------------------------------------------------------%
-% CUSTOM LOREM IPSUM
-%---------------------------------------------------------------------------------------%
-\newcommand{\lorem}
-{Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus.}
-
-
 % use to vertically center content
 % credits to: http://tex.stackexchange.com/questions/7219/how-to-vertically-center-two-images-next-to-each-other
 \newcommand{\vcenteredinclude}[1]{\begingroup
@@ -311,14 +281,11 @@
     \vcenteredhbox{\icon{#1}{#2}{#5}} \href{mailto:#4}{\textcolor{#5}{#3}}
 }
 
-
-
 %=======================================================================================%
 %	DOCUMENT CONTENT
 %=======================================================================================%
 \begin{document}
 \fcolorbox{white}{white}{\begin{minipage}[c][0.95\textheight][t]{0.69\linewidth}
-
 
 %---------------------------------------------------------------------------------------
 %	TITLE HEADLINE
@@ -382,8 +349,6 @@ the real-life task enters my way, and I can solve it by math and/or programming 
 <<Definitely Maybe>> A.~\&{}~B.~Strugatsky
 \end{flushright}
 
-
-
 \vspace{12pt}
 
 %---------------------------------------------------------------------------------------%
@@ -436,7 +401,6 @@ the real-life task enters my way, and I can solve it by math and/or programming 
 
 \end{minipage}}%
 \fcolorbox{white}{sectcol}{\begin{minipage}[c][0.95\textheight][t]{0.33\linewidth}
-
 
 \begin{metasection}{Contact}
 
@@ -501,7 +465,8 @@ the real-life task enters my way, and I can solve it by math and/or programming 
 
 \begin{metasection}{Interests}
 
-\iconhref{StackOverflow}{12}{StackOverflow admirer, $\sim$5K}{https://stackoverflow.com/users/867349/troyane}{white} \\[4pt]
+\iconhref{StackOverflow}{12}{StackOverflow admirer,
+          $\sim$5K}{https://stackoverflow.com/users/867349/troyane}{white} \\[4pt]
 \icontext{MousePointer}{12}{OpenSource enthusiast \small{from 2007}}{white}\\[4pt]
 \icontext{Tasks}{12}{Exercism student}{white}\\[4pt]
 \icontext{Linux}{12}{Linuxoid}{white}\\[4pt]
@@ -518,7 +483,7 @@ the real-life task enters my way, and I can solve it by math and/or programming 
 \end{metasection}
 
 %---------------------------------------------------------------------------------------%
-%	QR CODE (optional)
+%	QR CODE
 %---------------------------------------------------------------------------------------%
 
 \vspace{0pt}
@@ -534,7 +499,9 @@ the real-life task enters my way, and I can solve it by math and/or programming 
 
 \null
 \vspace*{\fill}
-\hspace{-0.25\linewidth}\colorbox{bgcol}{\makebox[1.5\linewidth][c]{\mystrut \small \textcolor{white}{You can find this CV (code \& pdf) at \iconhref{Github}{12}{my repo.}{https://github.com/troyane/CV}{white} }}}
+\hspace{-0.25\linewidth}\colorbox{bgcol}{\makebox[1.5\linewidth][c]{\mystrut \small 
+\textcolor{white}{You can find this CV (code \& pdf) at 
+\iconhref{Github}{12}{my repo.}{https://github.com/troyane/CV}{white} }}}
 
 %=======================================================================================%
 %	DOCUMENT END
